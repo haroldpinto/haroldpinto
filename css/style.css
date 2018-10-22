@@ -1,3 +1,4 @@
+/********* FONTS *********/
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?4bkenz');
@@ -10,7 +11,6 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -19,7 +19,6 @@
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,15 +27,7 @@
   content: "\e9bd";
 }
 
-.burger-button {
-  display: none;
-  position: fixed;
-  color: #fff;
-  top: 7%;
-  right: 9%;
-  font-size: 2em;
-  z-index: 2;
-}
+/********* GENERAL *********/
 
 body {
 	margin: 0;
@@ -98,6 +89,8 @@ h5 {
 	font-size: 1.6em;
 	font-weight: 400;
 	color: #323643;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 h6 {
@@ -120,6 +113,8 @@ img {
     display: inline-block;
     vertical-align: middle;
 }
+
+/********* HEADER *********/
 
 .header {
 	background-color: rgba(25, 104, 134, 1.4);
@@ -153,6 +148,20 @@ img {
 	margin-bottom: 0;
 }
 
+/********* MOBILE MENU *********/
+
+.burger-button {
+  display: none;
+  position: fixed;
+  color: #fff;
+  top: 7%;
+  right: 9%;
+  font-size: 2em;
+  z-index: 2;
+}
+
+/********* DESKTOP MENU *********/
+
 .menu {
 	display: flex;
 	justify-content: center;
@@ -181,6 +190,8 @@ img {
 	text-decoration: underline;
 }
 
+/********* SLIDER *********/
+
 .hero {
 	position: relative;
 	text-align: center;
@@ -198,7 +209,7 @@ img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	animation-name: text-fade-in;
-	animation-duration: 4s;
+	animation-duration: 2s;
 }
 
 .hero-text .btn {
@@ -210,18 +221,6 @@ img {
 @keyframes text-fade-in {
 	0% {
 		opacity: 0;
-	}
-
-	30% {
-		opacity: .5;
-	}
-
-	50% {
-		opacity: .7;
-	}
-
-	80% {
-		opacity: 1;
 	}
 
 	100% {
@@ -243,6 +242,8 @@ img {
     margin: 0 auto;
 }
 
+/********* SECTIONS TITLE *********/
+
 .section-title {
 	text-align: center;
 	margin-top: 1.9em;
@@ -252,6 +253,8 @@ img {
 .section-title h2 {
 	margin-bottom: .2em;
 }
+
+/********* PORTFOLIO *********/
 
 .portfolio {
 	padding: 2% 3% 10% 3%;
@@ -319,6 +322,8 @@ img {
 	display: inline-block;
 }
 
+/********* CONTACT *********/
+
 .contact {
 	padding-top: 2em;
 	padding-bottom: 5em;
@@ -370,6 +375,8 @@ img {
 .contact-form .btn:hover {
 	background-color: #1d799b;
 }
+
+/********* FOOTER *********/
 
 .footer-section {
 	background-color: #196886;
@@ -446,6 +453,8 @@ img {
 	color: #fff;
 }
 
+/********* MEDIA QUERIES *********/
+
 @media screen and (max-width: 1023px) {
 	h1 {
 		margin-block-end: .1em;
@@ -464,6 +473,10 @@ img {
 
 	h3 {
 		font-size: 1.8em;
+	}
+
+	.menu {
+		margin-right: 12px;
 	}
 
 	.footer-column .contact-info {
@@ -549,8 +562,8 @@ img {
 	}
 
 	.burger-button {
-	  top: 4%;
-	  right: 10%;
+	  top: 5%;
+	  right:7%;
 	  font-size: 1.5em;
 	  display: block;
 	}
@@ -570,6 +583,7 @@ img {
 	    transition: .3s;
 	    padding-left: 0;
 	    padding-right: 0;
+	    margin-right: 0;
   	}
 
   	.menu ul {
@@ -651,5 +665,18 @@ img {
 }
 
 @media screen and (max-width: 320px) {
+	h5 {
+		padding-left: .2em;
+		padding-right: .2em;
+	}
 
+	.header figure {
+	    margin-left: 16px;
+	    margin-top: 7px;
+	}
+
+	.header img {
+		width: 60px;
+		height: 60px;
+	}
 }
