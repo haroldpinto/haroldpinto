@@ -152,29 +152,24 @@
 	</footer>
 	<script type="text/javascript">
 
-		/* funcion que recibe el tamaño de la pantalla (consulta a los medios) */
 		const mobile = window.matchMedia('screen and (max-width: 767px)');
-
-		/* se crea variable que llama a clase */
+		
 		const menu = document.querySelector('.menu');
 		console.log(menu);
-		/* se crea variable que llama a id */
+
 		const burgerButton = document.querySelector('#burger-menu');
 		console.log(burgerButton);
 
-		/* se crea la funcion que escucha al evento (nombre_funcion) */
 		mobile.addListener(validation)
 
 		function validation(event) {
 		if (event.matches) {
-			/* se crea la funcion que lee al evento ('evento', 'funcion') */
 			burgerButton.addEventListener('click', hideShow)
 			} else {
 			burgerButton.removeEventListener('click', hideShow)
 			}
 		}
 
-		/* se crea funcion de arriba con condicional */
 		function hideShow() {
 			if (menu.classList.contains('is-active')) {
 			  menu.classList.remove('is-active');
