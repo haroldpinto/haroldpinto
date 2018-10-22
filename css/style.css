@@ -420,6 +420,7 @@ img {
 .footer-column .item {
 	display: flex; 
 	align-items: center;
+	justify-content: center;
 }
 
 .footer-column .item img {
