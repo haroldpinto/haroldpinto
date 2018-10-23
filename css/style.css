@@ -634,6 +634,11 @@ img {
 		display: flex;
 	}
 
+	.footer-column .social img:hover {
+		transform: scale(1.2);
+		transition-duration: .7s;
+		transition-timing-function: ease-in-out;
+	}
 }
 
 @media screen and (max-width: 480px) {
