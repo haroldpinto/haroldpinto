@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:400,500,700" rel="stylesheet">
 	<link rel="icon" type="image/png" href="assets/logo00c.png" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<title> Harold Pinto </title>
 </head>
 <body>
@@ -22,7 +24,7 @@
 			<nav class="menu">
 				<ul>
 					<li><a class="link" href="#portfolio">Portfolio</a></li>
-					<!-- <li><a class="link" href="#contact">Contact</a></li> -->
+					<li><a class="link" href="#technologies">Technologies</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -104,6 +106,37 @@
 					</p>
 				</div>
 			</a>
+		</div>
+	</section>
+	<section class="technologies" id="technologies">
+		<div class="container">
+			<div class="section-title">
+				<h2>Technologies</h2>
+				<div class="separator"></div>
+			</div>
+		</div>
+		<div class="tech-carrousel">
+			<div class="tech-item">
+				<img src="assets/html5-logo-5.png" alt="HTML5" width="140" height="140">
+			</div>
+			<div class="tech-item">
+				<img src="assets/css-logo-3.png" alt="CSS" width="140" height="140">
+			</div>
+			<div class="tech-item">
+				<img src="assets/sass-logo-3.png" alt="SASS" width="140" height="140">
+			</div>
+			<div class="tech-item">
+				<img src="assets/js-logo-3.png" alt="Javascript" width="140" height="140">
+			</div>
+			<div class="tech-item">
+				<img src="assets/php-logo-1.png" alt="PHP" width="140" height="140">
+			</div>
+			<div class="tech-item">
+				<img src="assets/wp-logo-1.png" alt="WordPress" width="140" height="140">
+			</div>
+			<div class="tech-item">
+				<img src="assets/prestashop-logo-1.png" alt="Prestashop" width="140" height="140">
+			</div>
 		</div>
 	</section>
 	<!-- <section class="contact" id="contact">
@@ -189,5 +222,49 @@
 		validation(mobile);
 
 	</script>
+	<!--Script de Slick que controla el slider-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+  			
+  			$('.tech-carrousel').slick({
+
+					slidesToShow: 5,
+					slidesToScroll: 1,
+					autoplay: true,
+					autoplaySpeed: 2000,
+					centerMode: true,
+
+					responsive: [{
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 851,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 715,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 321,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+  			
+  			});
+		});
+    </script>
 </body>
 </html>
