@@ -635,9 +635,7 @@ img {
 	}
 
 	.footer-column .social img:hover {
-		transform: scale(1.2);
-		transition-duration: .7s;
-		transition-timing-function: ease-in-out;
+		transform: none;
 	}
 }
 
