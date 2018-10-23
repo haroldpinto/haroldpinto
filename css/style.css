@@ -60,6 +60,12 @@ textarea {
 	width: 100%;
 }
 
+input	{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 h1 {
 	font-size: 6em;
 	color: #fff;
