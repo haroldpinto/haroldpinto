@@ -231,20 +231,15 @@
   			
   			$('.tech-carrousel').slick({
 
-					slidesToShow: 5,
+					slidesToShow: 4,
 					slidesToScroll: 1,
-					autoplay: true,
+					autoplay: false,
 					autoplaySpeed: 2000,
 					centerMode: true,
+					arrows: false,
 
 					responsive: [{
                         breakpoint: 991,
-                        settings: {
-                            slidesToShow: 4
-                        }
-                    },
-                    {
-                        breakpoint: 851,
                         settings: {
                             slidesToShow: 3
                         }
@@ -256,7 +251,7 @@
                         }
                     },
                     {
-                        breakpoint: 321,
+                        breakpoint: 481,
                         settings: {
                             slidesToShow: 1
                         }
