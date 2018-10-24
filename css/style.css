@@ -334,7 +334,7 @@ img {
 
 /********* CONTACT *********/
 
-/*.contact {
+.contact {
 	padding-top: 2em;
 	padding-bottom: 5em;
 	background-image: url('../assets/background-1.jpg');
@@ -363,7 +363,7 @@ img {
 
 .contact .section-title h5 {
 	color: #fff;
-}*/
+}
 
 .btn,
 .contact-form .btn {
@@ -599,7 +599,7 @@ img {
 	    right: -120vw;
 	    bottom: 0;
 	    width: 100vw;
-	    height: 55px;
+	    height: 82px;
 	    display: block;
 	    align-items: center;
 	    justify-content: center;
@@ -630,10 +630,15 @@ img {
     	border: 1px solid #fff;
     	line-height: 26px;
     	width: 100%;
+    	overflow: hidden;
   	}
 
   	.menu.is-active li:nth-child(1) {
     	border-bottom: 1px solid #fff;
+  	}
+
+  	.menu.is-active li:nth-child(3) {
+    	border-top: 1px solid #fff;
   	}
 
   	.menu a {

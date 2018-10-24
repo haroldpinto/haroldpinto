@@ -23,8 +23,9 @@
 			</figure>
 			<nav class="menu">
 				<ul>
-					<li><a class="link" href="#portfolio">Portfolio</a></li>
-					<li><a class="link" href="#technologies">Technologies</a></li>
+					<li><a class="link" href="#portfolio">PORTFOLIO</a></li>
+					<li><a class="link" href="#technologies">TECHNOLOGIES</a></li>
+					<li><a class="link" href="#contact">CONTACT</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -41,68 +42,68 @@
 	</section>
 	<section class="portfolio" id="portfolio">
 		<div class="section-title">
-			<h2>Portfolio</h2>
+			<h2>PORTFOLIO</h2>
 			<div class="separator"></div>
-			<h5>I create beautiful websites for small businesses. Below are some of the projects I have worked on:</h5>
+			<h5>I create beautiful websites for small businesses. There are some of the projects I have worked and collaborated with:</h5>
 		</div>
 		<div class="portfolio-projects">
 			<a class="project" href="https://vivallure.com" target="_blank">
 				<figure class="project-image">
-					<img src="./assets/vivallure.jpg" alt="vivallure.com">
+					<img src="./assets/vivallure.jpg" alt="Beauty & Spa">
 				</figure>
 				<div class="project-overlay">
 					<p>
-						<span class="project-name">VIVALLURE</span>
+						<span class="project-name">BEAUTY & SPA</span>
 					</p>
 				</div>
 			</a>
 			<a class="project" href="https://grupologis.co" target="_blank">
 				<figure class="project-image">
-					<img src="./assets/grupologis.jpg" alt="grupologis.co">
+					<img src="./assets/grupologis.jpg" alt="Job Exchange">
 				</figure>
 				<div class="project-overlay">
 					<p>
-						<span class="project-name">GRUPO LOGIS</span>
+						<span class="project-name">JOB EXCHANGE</span>
 					</p>
 				</div>
 			</a>
 			<a class="project" href="http://puntawa.co" target="_blank">
 				<figure class="project-image">
-					<img src="./assets/puntawa.jpg" alt="puntawa.co">
+					<img src="./assets/puntawa.jpg" alt="Construction">
 				</figure>
 				<div class="project-overlay">
 					<p>
-						<span class="project-name">PUNTAWA</span>
+						<span class="project-name">CONSTRUCTION</span>
 					</p>
 				</div>
 			</a>
 			<a class="project" href="http://financar.com.co" target="_blank">
 				<figure class="project-image">
-					<img src="./assets/financar.jpg" alt="http://financar.com.co">
+					<img src="./assets/financar.jpg" alt="Real Estate">
 				</figure>
 				<div class="project-overlay">
 					<p>
-						<span class="project-name">FINANCAR</span>
+						<span class="project-name">REAL ESTATE</span>
 					</p>
 				</div>
 			</a>
 			<a class="project" href="https://teinco.joonik.com" target="_blank">
 				<figure class="project-image">
-					<img src="./assets/teinco.jpg" alt="https://teinco.joonik.com">
+					<img src="./assets/teinco.jpg" alt="Education">
 				</figure>
 				<div class="project-overlay">
 					<p>
-						<span class="project-name">TEINCO</span>
+						<span class="project-name">EDUCATION</span>
 					</p>
 				</div>
 			</a>
 			<a class="project" href="https://cannua.com" target="_blank">
 				<figure class="project-image">
-					<img src="./assets/cannua.jpg" alt="https://cannua.com">
+					<img src="./assets/cannua.jpg" alt="Hotel & Resort">
 				</figure>
 				<div class="project-overlay">
 					<p>
-						<span class="project-name">CANNUA</span>
+						<span class="project-name">HOTEL & RESORT</span>
 					</p>
 				</div>
 			</a>
@@ -111,7 +112,7 @@
 	<section class="technologies" id="technologies">
 		<div class="container">
 			<div class="section-title">
-				<h2>Technologies</h2>
+				<h2>TECHNOLOGIES</h2>
 				<div class="separator"></div>
 			</div>
 		</div>
@@ -139,22 +140,24 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section class="contact" id="contact">
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="section-title">
-				<h2>Get A Proposal</h2>
+				<h2>GET A PROPOSAL</h2>
 				<div class="separator"></div>
 				<h5>Tell me more about your project!</h5>
 			</div>
-			<form class="contact-form" action="mail.php" method="post" enctype="text/plain">
-				<input type="text" name="yourName" required placeholder="Your Name">
-				<input type="email" name="yourEmail" required placeholder="Your Email">
-				<input type="text" name="yourSubject" required placeholder="Your Subject">
-				<textarea rows="6" cols="47" name="yourMessage" required placeholder="Your Message"></textarea>
-				<input class="btn" type="submit" name="btnSubmit" value="SUBMIT">
-			</form>
+			<div class="contact-form">
+				<form method="POST" action="https://formspree.io/harpinmer@hotmail.com">
+					<input name="name" placeholder="Your Name" type="text" required="">
+					<input name="email" placeholder="Your email" type="email" required="">
+					<input name="subject" placeholder="Your Subject" type="text" required="">
+					<textarea name="message" placeholder="Your message" required></textarea>
+					<button class="btn" type="submit">Send</button>
+				</form>
+			</div>
 		</div>
-	</section> -->
+	</section>
 	<footer class="footer-section" id="footer-section">
 		<div class="footer">
 			<div class="footer-column logo">
@@ -233,7 +236,7 @@
 
 					slidesToShow: 4,
 					slidesToScroll: 1,
-					autoplay: false,
+					autoplay: true,
 					autoplaySpeed: 2000,
 					centerMode: true,
 					arrows: false,
