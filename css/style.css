@@ -302,7 +302,7 @@ img {
 }
 
 .project-overlay {
-	background: rgba(25, 104, 134, .5);
+	background: rgba(0, 0, 0, .2);
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -647,9 +647,9 @@ img {
 	}
 
 	.project:hover {
-	transform: none;
-	transition: none;
-}
+		transform: none;
+		transition: none;
+	}
 
 	.project-overlay {
 		display: flex;
