@@ -630,7 +630,7 @@ img {
     	border: 1px solid #fff;
     	line-height: 26px;
     	width: 100%;
-    	z-index: 99999999;
+    	/*z-index: 99999999;*/
   	}
 
   	.menu.is-active li:nth-child(1) {
