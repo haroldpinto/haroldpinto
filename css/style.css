@@ -147,6 +147,7 @@ img {
 	margin-bottom: -8.3em;
 	position: fixed;
 	z-index: 1;
+	/*opacity: .7;*/
 	overflow: hidden;
 	width: 100%;
 }
@@ -177,19 +178,16 @@ img {
 	align-items: center;
 	padding-left: 1.2em;
 	padding-right: 1.2em;
-	height: inherit; /*added*/
 }
 
 .menu ul {
 	list-style-type: none;
 	display: flex;
-	height: inherit; /*added*/
 }
 
 .menu li {
 	padding-left: 1.2em;
 	padding-right: 1.2em;
-	height: inherit; /*added*/
 }
 
 .menu a {
@@ -597,16 +595,16 @@ img {
   	.menu {
 	    position: fixed;
 	    background: #196886;
-	    z-index: 3;
+	    /*z-index: 3;*/
 	    top: 70px;
 	    right: -120vw;
 	    bottom: 0;
 	    width: 100vw;
 	    height: 82px;
-	    display: flex;
+	    display: block;
 	    align-items: center;
 	    justify-content: center;
-	    /*transition: .3s;*/
+	    transition: .3s;
 	    padding-left: 0;
 	    padding-right: 0;
 	    margin-right: 0;
