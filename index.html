@@ -7,6 +7,7 @@
 	<meta name="description" content="Web Developer Portfolio">
 	<meta name="keywords" content="html, wordpress, front end, frontend, front-end, web developer, developer, desarrollador, desarrollador web, web design, diseno web, desarrollo web">
 	<meta name="author" content="Harold Pinto">
+	<link rel="image_src" href="http://www.domain.co.uk/images/image.jpg">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:400,500,700" rel="stylesheet">
 	<link rel="icon" type="image/png" href="assets/logo00c.png" />
@@ -16,16 +17,16 @@
 </head>
 <body>
 	<header class="header" id="header">
-		<i class="icon-menu burger-button" id="burger-menu"></i>
+		<a href="#"><i class="icon-menu burger-button" id="burger-menu" role="menu" data-toogle="dropdown"></i></a>
 		<div class="container">
 			<figure class="logo">
 				<img src="assets/logo12.png" alt="" width="100" height="100" >
 			</figure>
 			<nav class="menu">
-				<ul onclick="void(0)">
-					<li><a class="link" href="#portfolio">Portfolio</a></li>
-					<li><a class="link" href="#technologies">Technologies</a></li>
-					<li><a class="link" href="#contact">Contact</a></li>
+				<ul role="menu">
+					<li><a class="link" href="#portfolio" role="menu">Portfolio</a></li>
+					<li><a class="link" href="#technologies" role="menu">Technologies</a></li>
+					<li><a class="link" href="#contact" role="menu">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
