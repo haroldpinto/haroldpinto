@@ -122,24 +122,6 @@ img {
     vertical-align: middle;
 }
 
-/********* HEADER *********/
-
-.header {
-	background-color: rgba(25, 104, 134, 1.4);
-	color: #fff;
-	display: flex;
-	height: 90px;
-	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin-bottom: -8.3em;
-	position: fixed;
-	z-index: 1;
-	/*opacity: .7;*/
-	overflow: hidden;
-	width: 100%;
-}
-
 .container {
 	max-width: 1000px;
 	flex: 1;
@@ -149,6 +131,24 @@ img {
 	text-align: inherit;
 	height: inherit;
 	flex-wrap: inherit;
+}
+
+/********* HEADER *********/
+
+.header {
+	background-color: rgba(25, 104, 134, 1.4);
+	color: #fff;
+	display: flex;
+	/*height: 90px;*/
+	height: inherit;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: -8.3em;
+	position: fixed;
+	z-index: 1;
+	overflow: hidden;
+	width: 100%;
 }
 
 .header figure {
@@ -166,7 +166,7 @@ img {
 	top: 7%;
 	right: 9%;
 	font-size: 2em;
-	z-index: 5;
+	z-index: 4;
 }
 
 /********* DESKTOP MENU *********/
@@ -177,25 +177,24 @@ img {
 	align-items: center;
 	padding-left: 1.2em;
 	padding-right: 1.2em;
-	/*z-index: 3;*/
+	height: inherit; /*added*/
 }
 
 .menu ul {
 	list-style-type: none;
 	display: flex;
-	/*z-index: 4;*/
+	height: inherit; /*added*/
 }
 
 .menu li {
 	padding-left: 1.2em;
 	padding-right: 1.2em;
-	/*z-index: 5;*/
+	height: inherit; /*added*/
 }
 
 .menu a {
 	font-weight: 400;
 	font-size: 1.4em;
-	/*z-index: 6;*/
 }
 
 .menu a:hover,
@@ -598,16 +597,16 @@ img {
   	.menu {
 	    position: fixed;
 	    background: #196886;
-	    /*z-index: 3;*/
+	    z-index: 3;
 	    top: 70px;
 	    right: -120vw;
 	    bottom: 0;
 	    width: 100vw;
 	    height: 82px;
-	    display: block;
+	    display: flex;
 	    align-items: center;
 	    justify-content: center;
-	    transition: .3s;
+	    /*transition: .3s;*/
 	    padding-left: 0;
 	    padding-right: 0;
 	    margin-right: 0;
@@ -634,7 +633,7 @@ img {
     	border: 1px solid #fff;
     	line-height: 26px;
     	width: 100%;
-    	z-index: 7;
+    	/*z-index: 7;*/
   	}
 
   	.menu.is-active li:nth-child(1) {
