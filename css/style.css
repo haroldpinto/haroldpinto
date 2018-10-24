@@ -177,21 +177,25 @@ img {
 	align-items: center;
 	padding-left: 1.2em;
 	padding-right: 1.2em;
+	z-index: 3;
 }
 
 .menu ul {
 	list-style-type: none;
 	display: flex;
+	z-index: 4;
 }
 
 .menu li {
 	padding-left: 1.2em;
 	padding-right: 1.2em;
+	z-index: 5;
 }
 
 .menu a {
 	font-weight: 400;
 	font-size: 1.4em;
+	z-index: 6;
 }
 
 .menu a:hover,
@@ -594,7 +598,7 @@ img {
   	.menu {
 	    position: fixed;
 	    background: #196886;
-	    z-index: 3;
+	    /*z-index: 3;*/
 	    top: 70px;
 	    right: -120vw;
 	    bottom: 0;
@@ -630,7 +634,7 @@ img {
     	border: 1px solid #fff;
     	line-height: 26px;
     	width: 100%;
-    	/*z-index: 99999999;*/
+    	z-index: 7;
   	}
 
   	.menu.is-active li:nth-child(1) {
