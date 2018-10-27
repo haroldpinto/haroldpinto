@@ -70,7 +70,7 @@ h1 {
 	font-size: 6em;
 	color: #fff;
 	/*margin-block-start: 1.3em;*/
-	margin-block-start: 40%;
+	margin-block-start: 47%;
     margin-block-end: 0;
     font-weight: 500;
 }
@@ -147,8 +147,7 @@ img {
 	margin-bottom: -8.3em;
 	position: fixed;
 	z-index: 1;
-	/*opacity: .7;*/
-	overflow: hidden;
+	overflow: visible;
 	width: 100%;
 }
 
@@ -370,7 +369,6 @@ img {
 .contact-form .btn {
 	cursor: pointer;
 	padding: .4546em;
-	/*width: 69%*/;
 	width: 11.5em;
 	height: 43px;
 	background-color: #196886;
@@ -691,6 +689,10 @@ img {
 		padding-right: 0;
 	}
 
+	.portfolio-projects {
+		grid-template-columns: repeat(1, minmax(300px, 460px));
+	}
+
 	.project-overlay span {
 		font-size: 1.2em;
 	}
@@ -712,3 +714,4 @@ img {
 		height: 60px;
 	}
 }
+
