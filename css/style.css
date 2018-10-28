@@ -220,7 +220,7 @@ img {
 	will-change: auto;
 }
 
-@keyframes text-fade-in {
+@keyframes imh-zoom-in {
 	0% {
 		transform: scale(0);
 	}
