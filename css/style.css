@@ -262,7 +262,7 @@ img {
 
 .portfolio-projects {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(100px, 400px));
+	grid-template-columns: repeat(2, minmax(100px, 400px));
 	justify-content: center;
 	grid-gap: 1.75em;
 }
